@@ -16,6 +16,11 @@ body {
   z-index: 1;
 }
 
+input[type="text"]
+{
+    font-size:14px;
+}
+
 .wrapperClass {
   height: 38%;
   width: 100%;
