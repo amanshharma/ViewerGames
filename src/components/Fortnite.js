@@ -42,7 +42,7 @@ class Fortnite extends Component {
     if (joined && fortNiteId !== '') {
       return <span>Once the viewer game starts you will be notified if you are selected</span>
     } else {
-      return <span>Please enter your Fortnite Id</span>
+      return <span>Please enter your Fortnite Id before pressing Join</span>
     }
   }
 
