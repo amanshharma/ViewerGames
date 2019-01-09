@@ -1,0 +1,292 @@
+body {
+  background-size: cover;
+  opacity: 100%;
+  color: #ffffff 100%;
+  font-family: "Avenir Next";
+  margin: 0;
+} 
+
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapperClass {
+  height: 38%;
+  width: 100%;
+  margin: 0 16%;
+  background-color: #787878;
+  padding: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+  background-image: url("./images/background.png");
+}
+
+
+/* Style for the background image */
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/background.png) center center;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+/* Style for initial text */
+.PlainText{
+  color: #ffffff;
+  margin-bottom: 1%;
+}
+
+/* Style for the text with Show more */
+.SecondText{
+  color: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+  -moz-transition: visibility 0.5s, opacity 0.5s linear;
+  -ms-transition: visibility 0.5s, opacity 0.5s linear;
+  -o-transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  margin-bottom: 1%;
+}
+
+/* Style for toggling second text */
+.SecondTextShow{
+  color: #ffffff;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+  -moz-transition: visibility 0.5s, opacity 0.5s linear;
+  -ms-transition: visibility 0.5s, opacity 0.5s linear;
+  -o-transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  margin-bottom: 1%;
+}
+
+.TextInput {
+  opacity: 100%;
+  fill: #27313B 100%;
+  border: 1px inside;
+  border-radius: 8px;
+  width: 100%;
+  height: 88%;
+}
+
+.PrimaryButton {
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color:#66e979; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.SecondaryButton {
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color:#cf4b4b; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.EntryText {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 10px;
+  margin-top: 1%;
+  align-self: center;
+}
+
+.ToggleText {
+  color: #4bcf61;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.LiveText {
+  color: #f53e39;
+  font-size: 15px;
+  align-self: center;
+}
+
+::placeholder { 
+  color: #4c5661;
+  font-size: 14px;
+}
+
+
+/* Style for Row 1 in Flex Structure */
+.r1 {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/* Style for Row 2 in Flex Structure */
+.r2 {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style for Row 3 in Flex Structure */
+.r3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Style for Row 4 in Flex Structure */
+.r4 {
+  display: none;
+  margin-top: 7%;
+  cursor: pointer;
+}
+
+/* Style for Row 1 - Coulumn 1 in Flex Structure */
+.r1c1 {
+  flex: 1;
+  margin-right: 7px;
+}
+
+/* Style for Row 1 - Coulumn 2in Flex Structure */
+.r1c2 {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+/* Style for Row 2 - Column 1 in Flex Structure */
+.r2c1 {
+  width: 80%;
+}
+
+/* Style for Row 2-Column 2 in Flex Structure */
+.r2c2 {
+  width: 17.9%;
+    margin-left: 7.4px;
+}
+
+/* Style for Row 1-Column 2-Row 1 in Flex Structure */
+.r1c2r1 {
+  margin-left: auto;
+  padding: 0 22px 0 0;
+  cursor: pointer;
+}
+
+/* Style for Row 1-Column 2-Row 2 in Flex Structure */
+.r1c2r2 {
+  display: flex;
+}
+
+/* Style for Row 1-Column 2-Row 3 in Flex Structure */
+.r1c2r3 {
+  margin: 1% 0;
+  flex: 1;
+}
+
+/* Style for Row 1-Column 2-Row 4 in Flex Structure */
+.r1c2r4 {
+  color: white;
+  flex: 1;
+}
+
+/* Style for Row 1-Column 2-Row 4 in in Mobile View Flex Structure */
+.r1c2r4-mobile {
+  display: none;
+}
+
+/* To show the dots after the first text */
+.DotsShow{
+  opacity: 1;
+}
+
+/* To hide the dots after the first text */
+.DotsHide{
+  opacity: 0;
+}
+
+/* Styles for Responsive design */
+@media only screen and (max-width: 500px) {
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .wrapperClass {
+    height: 50%;
+    width: 100%;
+    margin: 0 0;
+    background-color: #787878;
+    padding: 1.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;
+    background-image: url("./images/background.png");
+  }
+  .r4 {
+    background-color: #5f3089;
+    height: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    transition: visibility 0.5s, opacity 0.5s linear;
+  }
+  .r1c2r1 {
+    display: none;
+  }
+
+  .r1c2r4 {
+    display: none;
+  }
+  .r1c2r4-mobile {
+    display: flex;
+    font-size: 14px;
+    flex: 1;
+  }
+  .EntryText {
+    font-size: 14px;    
+  }
+  .r3 {
+    display: none;
+  }
+}
